@@ -34,3 +34,9 @@ array = [...new Set(array)];
 
 - 배열을 가공하여 원하는 정보를 얻어낼 때 filter를 사용할 방법을 먼저 생각해보자
 - https://school.programmers.co.kr/learn/courses/30/lessons/12906
+  <br/><br/>
+
+### 5. 최소 직사각형
+
+- 도형 관련이면 일단 머릿속으로 생각부터 해보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/86491
