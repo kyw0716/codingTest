@@ -27,3 +27,5 @@ function solution(id_list, report, k) {
 
 // array의 중복을 제거하려면 array = [...new Set(array)]를 해주면 된다.
 // Set은 중복을 허용하지 않는 자료구조라서!
+
+// https://school.programmers.co.kr/learn/courses/30/lessons/92334

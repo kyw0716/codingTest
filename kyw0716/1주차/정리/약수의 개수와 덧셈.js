@@ -10,3 +10,4 @@ function solution(left, right) {
 }
 
 //제곱수는 약수의 개수가 홀수다.
+// https://school.programmers.co.kr/learn/courses/30/lessons/77884
