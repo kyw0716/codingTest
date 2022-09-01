@@ -8,3 +8,5 @@ function solution(left, right) {
   }
   return answer;
 }
+
+//제곱수는 약수의 개수가 홀수다.
