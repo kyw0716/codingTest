@@ -1,5 +1,5 @@
 #3 신고 결과 받기
-!(링크)[https://school.programmers.co.kr/learn/courses/30/lessons/92334]
+![링크](https://school.programmers.co.kr/learn/courses/30/lessons/92334)
 
 개인적으로 너무 힘들었다ㅠㅠ
 다른 언어들은 어떤지 모르겠지만 배열과 리스트가 엄연히 달라 생성자를 선언하는 것부터 달랐다.
