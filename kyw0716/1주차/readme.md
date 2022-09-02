@@ -45,3 +45,8 @@ array = [...new Set(array)];
 
 - 새로운걸 많이 만들지 말고 주어진 변수들을 활용해서 문제 풀어보자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=javascr
+
+## 7. 신규 아이디 추천
+
+- 문자열 처리하는 문제는 정규 표현식 사용하는 방식 먼저 생각해볼것!
+- https://school.programmers.co.kr/learn/courses/30/lessons/72410
