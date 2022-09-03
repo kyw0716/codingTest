@@ -1,18 +1,19 @@
 #3 신고 결과 받기
-![링크]('https://school.programmers.co.kr/learn/courses/30/lessons/92334')
+[링크]('https://school.programmers.co.kr/learn/courses/30/lessons/92334')
 
 개인적으로 너무 힘들었다ㅠㅠ
 다른 언어들은 어떤지 모르겠지만 배열과 리스트가 엄연히 달라 생성자를 선언하는 것부터 달랐다.
 물론 내가 길을 많이 돌아돌아 풀어서 좀 간결히 만드는게 좋겠지만...
 
 #4 같은 숫자는 싫어
-![링크]('https://school.programmers.co.kr/learn/courses/30/lessons/12906')
+[링크]('https://school.programmers.co.kr/learn/courses/30/lessons/12906')
 
 이거 나중에 자바 정규 표현식으로 풀어보라고 했다... 
 처음에는 연속이라는 단어에 집착했는데 다시 생각해서 역발상으로 연속되지 않는 index 부분의 값을 추가해주었다. 
 
 #5 최소직사각형
-![링크]('https://school.programmers.co.kr/learn/courses/30/lessons/86491')
+[링크]('https://school.programmers.co.kr/learn/courses/30/lessons/86491')
+
 이건 간소화시킬 방법을 찾아야할듯.. 자바가 가진 기능을 제대로 못 활용한 느낌이다
 c++ 풀이같다...
 오 맞다 가장 중요한거 2차원 배열 순서 까먹지 마시길!!!!!!!
