@@ -50,3 +50,8 @@ array = [...new Set(array)];
 
 - 문자열 처리하는 문제는 정규 표현식 사용하는 방식 먼저 생각해볼것!
 - https://school.programmers.co.kr/learn/courses/30/lessons/72410
+
+## 8. 키패드 누르기
+
+- 어떤 요소 간의 거리를 구할 때는 좌표 배열을 만들어서 해보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/67256
