@@ -6,7 +6,7 @@
 
 ## 2. 음양 더하기
 
-- map, filter 이런 함수들 이용해서 최대한 반복문 피해보자
+- map, filter 이런 함수들 이용해서 최대한 반복문 피해보자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/76501
 
 ## 3. 내적
@@ -15,4 +15,5 @@
 
 ## 4. 크레인 인형뽑기 게임
 
+- array.at(-1)을 통해 배열의 마지막 요소에 접근할 수 있다.
 - https://school.programmers.co.kr/learn/courses/30/lessons/64061
