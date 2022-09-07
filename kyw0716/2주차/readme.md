@@ -22,3 +22,7 @@
 
 - 3개를 골라 부분 배열을 만드는 과정 => 조합 만들기로 해결함. 조합 만드는 알고리즘 외우고 있자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/12977
+
+## 6. 나머지가 1이 되는 숫자
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/87389
