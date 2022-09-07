@@ -42,3 +42,7 @@
 
 - set쓰면 중복 제거됨, combination 알고리즘 잘 써보기
 - https://school.programmers.co.kr/learn/courses/30/lessons/68644
+
+## 10. 실패율
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/42889
