@@ -17,3 +17,8 @@
 
 - array.at(-1)을 통해 배열의 마지막 요소에 접근할 수 있다.
 - https://school.programmers.co.kr/learn/courses/30/lessons/64061
+
+## 5. 소수 만들기
+
+- 3개를 골라 부분 배열을 만드는 과정 => 조합 만들기로 해결함. 조합 만드는 알고리즘 외우고 있자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/12977
