@@ -31,3 +31,10 @@
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/82612
 - 삼항 연산자 잘 활용하기
+
+## 8. 3진법 뒤집기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/68935
+- https://school.programmers.co.kr/learn/courses/30/lessons/68935
+- number.toString(숫자) => 숫자 진법으로 변환
+- parseInt(문자열, 숫자) => 숫자 진법으로 이루어진 문자를 10진법 숫자로 바꾸어줌
