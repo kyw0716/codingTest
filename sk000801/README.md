@@ -31,3 +31,15 @@ arr[1][0] = 4임!!
 #8 내적
 모두 for문을 돌려 인덱스를 차례차례 거쳐 구했다 근데 이게 맞나..?
 stream 써서 한줄만에 푸는 방법도 생각해보자!
+
+#9 부족한 금액 계산하기
+#10 나머지가 1이 되는 수 
+
+#11 3진법 뒤집기
+이 친구는 정말 구글링으로 해결한 문제다..
+```(java)
+String a = Integer.toString(n,3); //주어진 10진법 수 -> 3진법 수
+//얘를 string으로 받은 이유는 문자열을 뒤집을 수 있어서
+// StringBuilder#reverse() 이 친구를 이용해서!!
+int answer = Integer.parseInt(reversed,3); //3진법 -> 10진법 수
+```
