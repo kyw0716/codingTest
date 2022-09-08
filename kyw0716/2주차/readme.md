@@ -131,3 +131,9 @@ Object.keys(hash).forEach((key) => {
 
 - console.log는 기본적으로 줄바꿈이 되어있는 출력이라 줄바꿈을 하지 않고 싶다면 process.stdout.write함수를 사용해야 한다.
 - https://school.programmers.co.kr/learn/courses/30/lessons/12969
+  <br/><br/>
+
+## 19. x만큼 간격이 있는 n개의 숫자
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12954
+  <br/><br/>
