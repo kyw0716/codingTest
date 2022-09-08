@@ -51,3 +51,8 @@
 
 - 문제 잘 읽어보고 풀자... 대충 이해하고 풀었다가 시도 겁나게 했잖아 ㅠㅠ
 - https://school.programmers.co.kr/learn/courses/30/lessons/42862
+
+## 12. 모의고사
+
+- 일정 구간이 반복되면 그 구간의 길이로 나눈 나머지를 활용해보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/42840
