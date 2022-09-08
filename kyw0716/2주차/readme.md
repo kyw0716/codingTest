@@ -108,3 +108,8 @@ Object.keys(hash).forEach((key) => {
 ## 17. 예산
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12982
+
+## 18. 직사각형 별찍기
+
+- console.log는 기본적으로 줄바꿈이 되어있는 출력이라 줄바꿈을 하지 않고 싶다면 process.stdout.write함수를 사용해야 한다.
+- https://school.programmers.co.kr/learn/courses/30/lessons/12969
