@@ -194,7 +194,12 @@ Object.keys(hash).forEach((key) => {
 - https://school.programmers.co.kr/learn/courses/30/lessons/12932
   <br/><br/>
 
-# 31. 자릿수 더하기
+## 31. 자릿수 더하기
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12931
+  <br/><br/>
+
+## 32. 이상한 문자 만들기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12930
   <br/><br/>
