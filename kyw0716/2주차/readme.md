@@ -216,5 +216,11 @@ Object.keys(hash).forEach((key) => {
 
 ## 36. 문자열을 정수로 바꾸기
 
+- 쓸데없는 조건문 안쓰도록 조심하기
 - https://school.programmers.co.kr/learn/courses/30/lessons/12925
+  <br/><br/>
+
+## 37. 수박수박수박수박수박수?
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12922
   <br/><br/>
