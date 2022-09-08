@@ -56,3 +56,8 @@
 
 - 일정 구간이 반복되면 그 구간의 길이로 나눈 나머지를 활용해보자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/42840
+
+## 13. K번째 수
+
+- slice, sort, push 같은 배열 관련 메소드 잘 숙지해두자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/42748
