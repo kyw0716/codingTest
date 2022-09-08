@@ -203,3 +203,8 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12930
   <br/><br/>
+
+## 33. 약수의 합
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12928
+  <br/><br/>
