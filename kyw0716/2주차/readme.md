@@ -178,3 +178,8 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12935
   <br/><br/>
+
+## 28. 정수 제곱근 판별
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12934
+  <br/><br/>
