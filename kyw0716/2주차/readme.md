@@ -147,3 +147,8 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12948
   <br/><br/>
+
+## 22. 하샤드 수
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12947
+  <br/><br/>
