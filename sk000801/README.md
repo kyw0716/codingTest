@@ -43,3 +43,6 @@ String a = Integer.toString(n,3); //주어진 10진법 수 -> 3진법 수
 // StringBuilder#reverse() 이 친구를 이용해서!!
 int answer = Integer.parseInt(reversed,3); //3진법 -> 10진법 수
 ```
+
+#12 크레인 인형뽑기 게임
+킹받는다 코드 다 짜놨는데 2차원 배열 행열 헷갈려서 거꾸로 적어놓고 화냈다
