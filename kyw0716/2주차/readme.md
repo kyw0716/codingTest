@@ -6,9 +6,9 @@
 arr.reduce((누적, 현재)=>return 누적에 현재 값으로 뭔 연산 한거, 초기값)
 ```
 
-<br/><br/>
-
 - https://school.programmers.co.kr/learn/courses/30/lessons/86051
+
+<br/><br/>
 
 ## 2. 음양 더하기
 
