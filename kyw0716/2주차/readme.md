@@ -99,3 +99,8 @@ Object.keys(hash).forEach((key) => {
 - 일단 문제가 길면 문제부터 정확히 이해하고 코드 치기 시작하자.
 - 정규표현식 사용하면 조건문 엄청 줄일 수 있으니까 잘 써먹어보자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/17682
+
+## 16. 비밀지도
+
+- 문자를 바꾸는거면 정규표현식 사용한 replace 매서드 사용해보자..
+- https://school.programmers.co.kr/learn/courses/30/lessons/17681
