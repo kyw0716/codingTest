@@ -152,3 +152,8 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12947
   <br/><br/>
+
+## 23. 평균 구하기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12944
+  <br/><br/>
