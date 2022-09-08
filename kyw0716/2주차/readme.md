@@ -46,3 +46,8 @@
 ## 10. 실패율
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/42889
+
+## 11. 체육복
+
+- 문제 잘 읽어보고 풀자... 대충 이해하고 풀었다가 시도 겁나게 했잖아 ㅠㅠ
+- https://school.programmers.co.kr/learn/courses/30/lessons/42862
