@@ -162,3 +162,9 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12943
   <br/><br/>
+
+## 25. 최대공약수와 최소공배수
+
+- 유클리드 호제법 사용 -> 시간 복잡도 훨씬 줄일 수 있을 듯.
+- https://school.programmers.co.kr/learn/courses/30/lessons/12940
+  <br/><br/>
