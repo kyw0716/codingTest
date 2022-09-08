@@ -104,3 +104,7 @@ Object.keys(hash).forEach((key) => {
 
 - 문자를 바꾸는거면 정규표현식 사용한 replace 매서드 사용해보자..
 - https://school.programmers.co.kr/learn/courses/30/lessons/17681
+
+## 17. 예산
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12982
