@@ -1,7 +1,11 @@
 ## 1. 없는 숫자 더하기
 
 - 일부분만 더하는 문제니까 전체에서 현재 값을 빼면 됐음... 그리고 배열 reduce 함수 잘 기억하자.
-- arr.reduce((누적, 현재)=>return 누적에 현재 값으로 뭔 연산 한거, 초기값) 요런식으로 사용하는 함수임.
+
+```javascript
+arr.reduce((누적, 현재)=>return 누적에 현재 값으로 뭔 연산 한거, 초기값)
+```
+
 - https://school.programmers.co.kr/learn/courses/30/lessons/86051
 
 ## 2. 음양 더하기
@@ -15,7 +19,12 @@
 
 ## 4. 크레인 인형뽑기 게임
 
-- array.at(-1)을 통해 배열의 마지막 요소에 접근할 수 있다.
+- 배열의 마지막 요소에 접근
+
+```javascript
+array.at(-1);
+```
+
 - https://school.programmers.co.kr/learn/courses/30/lessons/64061
 
 ## 5. 소수 만들기
@@ -34,8 +43,18 @@
 
 ## 8. 3진법 뒤집기
 
-- number.toString(숫자) => 숫자 진법으로 변환
-- parseInt(문자열, 숫자) => 숫자 진법으로 이루어진 문자를 10진법 숫자로 바꾸어줌
+- 숫자 진법으로 변환
+
+```javascript
+number.toString(숫자);
+```
+
+- '숫자' 진법으로 이루어진 string을 10진법 number로 바꾸어줌
+
+```jsavascript
+parseInt(string, 숫자);
+```
+
 - https://school.programmers.co.kr/learn/courses/30/lessons/68935
 
 ## 9. 두개 뽑아서 더하기
@@ -61,3 +80,22 @@
 
 - slice, sort, push 같은 배열 관련 메소드 잘 숙지해두자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/42748
+
+## 14. 완주하지 못한 선수
+
+- 배열로 풀기 힘들때 해시맵도 한번 생각해보자.
+- 해시맵에서 value로 key값을 찾는 방법
+
+```javascript
+Object.keys(hash).forEach((key) => {
+  if (hash[key] === value) return key;
+});
+```
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/42576
+
+## 15. 다트게임
+
+- 일단 문제가 길면 문제부터 정확히 이해하고 코드 치기 시작하자.
+- 정규표현식 사용하면 조건문 엄청 줄일 수 있으니까 잘 써먹어보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/17682
