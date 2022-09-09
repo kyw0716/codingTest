@@ -224,3 +224,36 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12922
   <br/><br/>
+
+## 38. 폰켓몬
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/1845
+  <br/><br/>
+
+## 39. 2016년
+
+- 날짜 구하는 문제에서 Date 객체 사용하자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/12901
+  <br/><br/>
+
+## 40. 문자열 내마음대로 정렬하기
+
+- 어떤 문자열의 아스키코드를 이용할 일이 있으면 charCodeAt() 함수를 이용하자.
+
+```javascript
+문자열.charCodeAt();
+```
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12915
+  <br/><br/>
+
+## 41. 문자열 다루기 기본
+
+- 문자열엔 뭐다? 정규표현식이다~
+- https://school.programmers.co.kr/learn/courses/30/lessons/12918
+  <br/><br/>
+
+## 42. 문자열 내림차순으로 배치하기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12917
+  <br/><br/>
