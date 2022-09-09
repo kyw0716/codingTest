@@ -257,3 +257,34 @@ Object.keys(hash).forEach((key) => {
 
 - https://school.programmers.co.kr/learn/courses/30/lessons/12917
   <br/><br/>
+
+## 43. 가운데 글자 가져오기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12903
+  <br/><br/>
+
+## 44. 나누어 떨어지는 숫자 배열
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12910
+  <br/><br/>
+
+## 45. 서울에서 김서방 찾기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12919
+  <br/><br/>
+
+## 46. 두 정수 사이의 합
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12912
+  <br/><br/>
+
+## 47. 문자열 내 p와 y의 개수
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12916
+  <br/><br/>
+
+## 48. 소수 찾기
+
+- 일정 구간내의 소수를 찾는 문제는 에라토스테네스의 체 알고리즘 적용해보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/12921
+  <br/><br/>
