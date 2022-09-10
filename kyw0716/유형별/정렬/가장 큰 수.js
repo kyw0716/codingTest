@@ -13,3 +13,5 @@ function solution(numbers) {
     ? numbers.join("")
     : "0";
 }
+// 문제 잘 읽어보고 예외의 경우 생각해보자
+// https://school.programmers.co.kr/learn/courses/30/lessons/42746#
