@@ -1,18 +1,18 @@
 #3 신고 결과 받기
-!('https://school.programmers.co.kr/learn/courses/30/lessons/92334')
+!(https://school.programmers.co.kr/learn/courses/30/lessons/92334)
 
 개인적으로 너무 힘들었다ㅠㅠ
 다른 언어들은 어떤지 모르겠지만 배열과 리스트가 엄연히 달라 생성자를 선언하는 것부터 달랐다.
 물론 내가 길을 많이 돌아돌아 풀어서 좀 간결히 만드는게 좋겠지만...
 
 #4 같은 숫자는 싫어
-!('https://school.programmers.co.kr/learn/courses/30/lessons/12906')
+!(https://school.programmers.co.kr/learn/courses/30/lessons/12906)
 
 이거 나중에 자바 정규 표현식으로 풀어보라고 했다... 
 처음에는 연속이라는 단어에 집착했는데 다시 생각해서 역발상으로 연속되지 않는 index 부분의 값을 추가해주었다. 
 
 #5 최소직사각형
-!('https://school.programmers.co.kr/learn/courses/30/lessons/86491')
+!(https://school.programmers.co.kr/learn/courses/30/lessons/86491)
 
 이건 간소화시킬 방법을 찾아야할듯.. 자바가 가진 기능을 제대로 못 활용한 느낌이다
 c++ 풀이같다...
@@ -23,22 +23,19 @@ arr[1][0] = 4임!!
 ```
 
 #6 로또의 최고 순위와 최저 순위
-!('https://school.programmers.co.kr/learn/courses/30/lessons/77484')
+!(https://school.programmers.co.kr/learn/courses/30/lessons/77484)
 간단하게 생각하면 될 문제를 혼자 복잡하게 경우 나누고 if문 써도 될 일을 for문으로 돌려서 복잡하게 만들었다..
 변수명도 zeroCount 이런 식으로 어울리게 써보면 좋을듯
 
 #7 음양 더하기 
-<br>
 #8 내적
 모두 for문을 돌려 인덱스를 차례차례 거쳐 구했다 근데 이게 맞나..?
 stream 써서 한줄만에 푸는 방법도 생각해보자!
 
 #9 부족한 금액 계산하기
-<br>
 #10 나머지가 1이 되는 수 
 
 #11 3진법 뒤집기
-<br>
 이 친구는 정말 구글링으로 해결한 문제다..
 ```(java)
 String a = Integer.toString(n,3); //주어진 10진법 수 -> 3진법 수
@@ -48,11 +45,9 @@ int answer = Integer.parseInt(reversed,3); //3진법 -> 10진법 수
 ```
 
 #12 크레인 인형뽑기 게임
-<br>
 킹받는다 코드 다 짜놨는데 2차원 배열 행열 헷갈려서 거꾸로 적어놓고 화냈다
 
 #13 자릿수 더하기
-<br>
 이건 웃긴다 수학적 지식을 알아야 풀 수 있는 문제인듯
 ```(java)
         int length = (int)( Math.log10(n)+1 );
@@ -60,6 +55,16 @@ int answer = Integer.parseInt(reversed,3); //3진법 -> 10진법 수
 ```
 
 #14 약수의 합
-<br>
 도저히 생각으로는 주어진 수를 0부터 for문으로 돌려 나머지가 0이면 더하는 방식을 택하는 무식한 방법(시간복잡도 오질듯)밖에 떠오르지 않아서, 인터넷에 알고리즘이 있나 검색해봤다. 그래서 루트를 씌운 값까지 돌려서 더하는 방식을 취하시길래 코드가 좀 길어지지만 짰다.
 그러다가 또 세개정도 오류가 나서 왜 그런가 생각을 해봤더니, 제곱수의 경우를 생각 안 했더라. 그래서 제곱수도 if/else 문으로 걸렀더니 코드가 혼자 길어졌다.. 짧게 만들 방법을 구상해야겠다..
+
+#15 숫자 문자열과 영단어
+<br>
+처음에는 0-9까지 zero-nine까지 문자열을 생성하여 정규 표현식을 활용해 구해보려 했는데, 순서도 뒤죽박죽이 되고 두 경우를 아우를 수 없어 replace함수를 발견하고 노선을 변경했다!! 
+```(java)
+number = "[0-9]+"
+s.matches(number) //0-9까지의 수만 존재한다면 number = "[0-9]+"
+
+//replace 함수
+s = s.replace(바꿀 부분, 바꾸는 부분에 들어갈 값);
+```
