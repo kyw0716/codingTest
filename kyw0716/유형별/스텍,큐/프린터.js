@@ -27,3 +27,6 @@ function solution(priorities, location) {
   }
   return printCount;
 }
+
+// 바로 풀 수 있는 문제가 아니라면 로직을 머릿속으로만 생각하지말고 주석으로 적어보고 코딩 시작하자.
+// https://school.programmers.co.kr/learn/courses/30/lessons/42587
