@@ -40,7 +40,74 @@
 
 ## 가장 큰 수
 
-- 문제 잘 읽어보고 예외의 경우 생각해보자
+- 문제 잘 읽어보고 예외의 경우 생각해보자.
 - https://school.programmers.co.kr/learn/courses/30/lessons/42746#
+
+<br><br>
+
+## H-index
+
+- 정확도 실패하면 예외의 경우 잘 생각해보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/42747
+
+<br><br>
+
+# - 완전탐색
+
+## 소수찾기
+
+- 순열과 조합 만드는 알고리즘, 소수 찾는 알고리즘 숙지하자.
+
+```javascript
+// 순열 만드는 함수
+function getPermutation(arr, selectNumber) {
+  let results = [];
+  if (selectNumber === 1) return arr;
+
+  arr.forEach((fixed, index, original) => {
+    let rest = original.filter((v, i) => i !== index);
+    let permutations = getPermutation(rest, selectNumber - 1);
+    let attach = permutations.map((permutation) =>
+      [fixed, ...permutation].join("")
+    );
+    results.push(...attach);
+  });
+
+  return results;
+}
+
+// 조합 만드는 함수
+function getCombination(arr, selectNumber) {
+  let results = [];
+  if (selectNumber === 1) return arr;
+
+  arr.forEach((fixed, index, original) => {
+    let rest = original.filter((v, i) => i > index);
+    let combinations = getCombination(rest, selectNumber - 1);
+    let attach = combinations.map((combination) =>
+      [fixed, ...combination].join("")
+    );
+    results.push(...attach);
+  });
+
+  return results;
+}
+
+// n까지의 수 중에서 소수를 찾아주는 함수
+function prime(n) {
+  let primeArray = Array(n + 1)
+    .fill(true)
+    .fill(false, 0, 2);
+  for (let i = 2; i * i <= n; i++) {
+    if (primeArray[i])
+      for (let j = i * i; j <= n; j += i) {
+        primeArray[j] = false;
+      }
+  }
+  return primeArray.map((v, i) => (v ? i : 0)).filter((v) => v);
+}
+```
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/42839
 
 <br><br>
