@@ -1,51 +1,52 @@
 // 순열 구하기
 function getPermutation(arr, selectNumber) {
   let results = [];
-  if (selectNumber === 1) return arr.map((number) => [...number]);
-  arr.forEach((fixed, index, origin) => {
-    let rest = arr.filter((n, i) => i !== index);
-    let permutation = getPermutation(rest, selectNumber - 1);
-    let attach = permutation.map((element) => [fixed, ...element]);
+  if (selectNumber === 1) return arr.map((v) => [...v]);
+  arr.forEach((fixed, index, original) => {
+    let rest = original.filter((v, i) => i !== index);
+    let permutations = getPermutation(rest, selectNumber - 1);
+    let attach = permutations.map((permutation) => [fixed, ...permutation]);
     results.push(...attach);
   });
+
   return results;
 }
 
-function generatePrimeNumberArray(n) {
+function getPrimeNumber(n) {
   let arr = Array(n + 1)
     .fill(true)
     .fill(false, 0, 2);
   for (let i = 2; i * i <= n; i++) {
-    if (arr[i]) {
+    if (arr[i])
       for (let j = i * i; j <= n; j += i) {
-        arr[j] = false;
+        if (j % i === 0) arr[j] = false;
       }
-    }
   }
+
   return arr;
 }
 
 function solution(numbers) {
-  let permutations = [];
-  let maxNumber = Number(
-    numbers
-      .split("")
-      .sort((a, b) => Number(b) - Number(a))
-      .join("")
-  );
-  let primeNumbers = generatePrimeNumberArray(maxNumber)
-    .map((v, i) => (v ? i : 0))
-    .filter((v) => v);
-  for (let i = 1; i <= numbers.split("").length; i++) {
-    permutations.push(
-      ...getPermutation(numbers.split(""), i).map((subArray) =>
-        Number(subArray.join("").replace(/\,/g, ""))
-      )
+  let numbersArray = numbers.split("");
+  let allPermutations = [];
+  let primeArray = [];
+  let answer = 0;
+
+  for (let i = 1; i <= numbers.length; i++) {
+    let permutations = getPermutation(numbersArray, i).map((v) =>
+      Number(v.join(""))
     );
+    allPermutations.push(...permutations);
   }
-  permutations = new Set(permutations);
-  permutations = [...permutations].filter((v) => primeNumbers.includes(v));
-  return permutations.length;
+  allPermutations = [...new Set(allPermutations)];
+  allPermutations.sort((a, b) => a - b);
+
+  primeArray = getPrimeNumber(allPermutations.at(-1));
+  allPermutations.forEach((value) => {
+    if (primeArray[value]) answer++;
+  });
+
+  return answer;
 }
 
 // 순열과 조합 만드는 알고리즘, 소수 찾는 알고리즘 숙지하지

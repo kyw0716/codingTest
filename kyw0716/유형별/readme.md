@@ -111,3 +111,10 @@ function prime(n) {
 - https://school.programmers.co.kr/learn/courses/30/lessons/42839
 
 <br><br>
+
+### 카펫
+
+- 규칙성 찾아서 그거에 대해 전부 탐색하도록 만들자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/42842
+
+<br><br>
