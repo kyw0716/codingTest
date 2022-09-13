@@ -118,3 +118,10 @@ function prime(n) {
 - https://school.programmers.co.kr/learn/courses/30/lessons/42842
 
 <br><br>
+
+### 피로도
+
+- 모든 경우의 수를 다 고려하는 방식에서 순열 떠올려보자.
+- https://school.programmers.co.kr/learn/courses/30/lessons/87946#
+
+<br><br>
