@@ -100,3 +100,10 @@ Math.sqrt(루트씌울 수)
 원래는 배열을 리스트로 바꿔 Collections.frequency로 깼는데 효율성 테스트에서 다 실패했다(오래걸릴만함)
 그래서 영우가 hashmap을 써보라고 해서 hashmap으로 깼다
 아나 오래걸렸던 게 hashmap이름.keySet()인데 KeySet()으로 계속 하느라 안나와서 화딱지 났다
+
+#21 문자열 내 p와 y의 개수
+<br>
+```(java)
+long p = s.chars().filter(c -> c == 'p').count();
+```
+문자열 안의 중복 문자 개수 세는 방법 잊지말기!!!!
