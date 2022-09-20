@@ -115,3 +115,8 @@ long p = s.chars().filter(c -> c == 'p').count();
 ```(java)
 String.valueOf(x).chars().map(ch -> ch - '0').sum(); //자릿수 합 구하는 더 빠른 공식!!
 ```
+
+#23 키패드 누르기
+<br>
+결과 문자열을 출력하는 과정은 경우 분리를 나름 잘 했는데,
+키패드의 숫자들을 좌표로 hashmap으로 연결시키는데 너무 많은 코드가 쓰이는 것에 수정이 필요함!
