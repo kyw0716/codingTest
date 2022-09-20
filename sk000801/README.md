@@ -107,3 +107,11 @@ Math.sqrt(루트씌울 수)
 long p = s.chars().filter(c -> c == 'p').count();
 ```
 문자열 안의 중복 문자 개수 세는 방법 잊지말기!!!!
+
+#22 하샤드 수 
+<br>
+자릿수 구하는 방법 기억하기!
+더 쉬운 방법 찾아보기!
+```(java)
+String.valueOf(x).chars().map(ch -> ch - '0').sum(); //자릿수 합 구하는 더 빠른 공식!!
+```
