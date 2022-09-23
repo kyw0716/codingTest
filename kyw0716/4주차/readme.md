@@ -37,3 +37,22 @@
 - 여기선 배열을 사용하여 이전 계산 결과값을 캐싱하는 방식을 사용했다
 
 <br><br>
+
+### 다음 큰 수
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12911
+
+<br><br>
+
+### 영어 끝말 잇기
+
+- https://school.programmers.co.kr/learn/courses/30/lessons/12981
+
+<br><br>
+
+### 짝지어 제거하기
+
+- 자료구조 생각도 좀 해보자...
+- https://school.programmers.co.kr/learn/courses/30/lessons/12973
+
+<br><br>
