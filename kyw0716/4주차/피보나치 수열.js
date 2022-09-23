@@ -8,4 +8,5 @@ function solution(n) {
 }
 
 // 피보나치 수열을 재귀호출로 구현하면 호출 수가 엄청 늘어날 수 있으니 구현할 때 방식을 잘 선택하자
+// 여기선 배열을 사용하여 이전 계산 결과값을 캐싱하는 방식을 사용했다
 // https://school.programmers.co.kr/learn/courses/30/lessons/12945
