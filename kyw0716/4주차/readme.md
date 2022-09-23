@@ -29,3 +29,10 @@
 - https://school.programmers.co.kr/learn/courses/30/lessons/12924
 
 <br><br>
+
+### 피보나치 수열
+
+- 피보나치 수열을 재귀호출로 구현하면 호출 수가 엄청 늘어날 수 있으니 구현할 때 방식을 잘 선택하자
+- https://school.programmers.co.kr/learn/courses/30/lessons/12945
+
+<br><br>
