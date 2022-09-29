@@ -165,3 +165,6 @@ Arrays.sort(배열, Collections.reverseOrder());
 #32 실패율
 <br>
 실패율과 그 값들에 대한 sort는 잘 되는데 같은 실패율을 가질 때 앞의 단계가 앞에 오는 문제를 제대로 해결치 못했다..
+
+#33 제일 작은 수 제거하기
+<br> 최소값 구하는 stream.filter함수겟
