@@ -179,3 +179,18 @@ string-> char[] : str.toCharArray();
 #38 행렬의 덧셈
 #39 직사각형 별찍기
 <br> 초기 설정이 신기했던 문제스
+
+#40 최대공약수와 최소공배수
+<br> 유클리드 호제법을 기억하자..!
+```(java)
+        if(n<m) {
+                int temp = n;
+                n = m;
+                m = temp;
+                }
+        while(m!=0) {
+                int r = n%m;
+                n = m;
+                m = r;
+                }
+```
