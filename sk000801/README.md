@@ -168,3 +168,6 @@ Arrays.sort(배열, Collections.reverseOrder());
 
 #33 제일 작은 수 제거하기
 <br> 최소값 구하는 stream.filter함수겟
+
+#34 가운데 글자 가져오기
+#35 수박수박수박수박수박수?
