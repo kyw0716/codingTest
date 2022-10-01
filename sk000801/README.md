@@ -171,3 +171,7 @@ Arrays.sort(배열, Collections.reverseOrder());
 
 #34 가운데 글자 가져오기
 #35 수박수박수박수박수박수?
+#36 문자열 내림차순으로 배치하기
+```(java)
+string-> char[] : str.toCharArray();
+```
