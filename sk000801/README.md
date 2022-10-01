@@ -175,3 +175,7 @@ Arrays.sort(배열, Collections.reverseOrder());
 ```(java)
 string-> char[] : str.toCharArray();
 ```
+#37 문자열 다루기 기본
+#38 행렬의 덧셈
+#39 직사각형 별찍기
+<br> 초기 설정이 신기했던 문제스
