@@ -230,3 +230,12 @@ string-> char[] : str.toCharArray();
 개수 찾는 거는 금방 했는데 문제는 아 이거 최댓값인 인덱스를 배열에 어떻게 집어넣냐가 관건이었다
 Math.max()함수랑 ArrayList를 통해 겨우 해결했다...
 
+#52 소수 만들기
+<br>
+아 이거 소수도 판별해야되고 합도 판별해야 한다... 아나 결국에는 삼중 for문..
+```(java)
+         for (int i = 2; i <= Math.sqrt(num); i++)
+        { if (num % i == 0) return false;
+        }
+                return true;
+```
