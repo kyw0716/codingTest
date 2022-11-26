@@ -1,6 +1,5 @@
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 class Solution {
     public int solution(int k, int[] tangerine) {
         int k1 = k;
