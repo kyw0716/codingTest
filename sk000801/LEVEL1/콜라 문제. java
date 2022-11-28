@@ -1,0 +1,17 @@
+class Solution {
+    public int solution(int a, int b, int n) {
+        int answer = 0;
+        int left = 0;
+        int coke = n;
+        while(coke >= a) {
+            answer += b*(coke/a);
+            if(coke%a == 0) {
+                coke = (coke/a)*b;
+            } else {
+                left = coke%a;
+                coke = (coke/a)*b + left;
+            }
+        }
+        return answer;
+    }
+}
