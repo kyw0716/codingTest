@@ -1,5 +1,5 @@
 const readline = require("readline");
-const r1 = readline.createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -7,12 +7,12 @@ const r1 = readline.createInterface({
 let cnt = 0;
 const inputs = [];
 
-r1.on("line", (input) => {
+rl.on("line", (input) => {
   inputs.push(input);
   cnt++;
 
   if (cnt === 2) {
-    r1.close();
+    rl.close();
   }
 }).on("close", () => {
   const milks = [0, 1, 2];

@@ -1,5 +1,5 @@
 const readline = require("readline");
-const r1 = readline.createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -25,12 +25,12 @@ const getAnswer = (money) => {
   return answer.join(" ");
 };
 
-r1.on("line", (input) => {
+rl.on("line", (input) => {
   count++;
   inputs.push(input);
 
   if (count === parseInt(inputs[0]) + 1) {
-    r1.close();
+    rl.close();
   }
 }).on("close", () => {
   inputs.shift();

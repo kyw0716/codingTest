@@ -1,10 +1,10 @@
 const readline = require("readline");
-const r1 = readline.createInterface({
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-r1.on("line", (input) => {
+rl.on("line", (input) => {
   const inputs = input.split(" ").map((v) => v.split(""));
   const min = [];
   const max = [];
