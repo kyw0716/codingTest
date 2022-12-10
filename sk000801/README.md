@@ -426,3 +426,15 @@ StringBuilder를 사용하던지, 다른 방식을 사용하던지 고민해볼�
 a+b+ab일텐데 이는 (a+1)(b+1)-1!
 <br>
 [참고!](https://school.programmers.co.kr/questions/33347)
+
+#83 튜플
+<br>
+{{}} 이러한 특수문자들은 분리를 어떻게 저렇게 했는데, 개수가 많은 숫자순으로 정렬하는게 힘들었다. (그래서 사실 힌트를 많이 참고했다..) Arrays.sort 안에 comparator를 쓰는 것이 가능하다는 것을 알았다....
+
+```(java)
+        Arrays.sort(s3, new Comparator<String>() {
+            public int compare (String s1, String s2) {
+                return Integer.compare(s1.length(), s2.length());
+            }
+        });
+```
