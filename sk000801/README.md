@@ -475,3 +475,27 @@ my_str.split("(?<=\\G.{" + n + "})");
 <br>
 더 간단히 풀 수 있는 방법 생각해 보기!!!
 https://school.programmers.co.kr/learn/courses/30/lessons/120869
+
+#87 치킨 쿠폰
+<br>
+반복문을 돌리면 반복문 속 <em>모든</em> 변수의 값을 다 적어보기!!!!
+
+#88 특이한 정렬
+<br>
+생노가다로 n을 기준으로 배열을 나눠 값을 넣어보려 했는데 너무 경우가 복잡해져
+아님을 느끼고 바로 comparator 사용을 찾아보았다.
+<br>
+```(java)
+special.sort(new Comparator<Integer>() {
+        public int compare(Integer a, Integer b) {
+                int aa = Math.abs(a-n);
+                int bb = Math.abs(b-n);
+                
+                if(aa == bb) return b-a; //이 부분이 조금 어렵다 
+                                        // 두 차이가 같다면 큰 쪽을 선택하라는?
+                else return aa-bb;
+            }
+        });
+```
+
+
