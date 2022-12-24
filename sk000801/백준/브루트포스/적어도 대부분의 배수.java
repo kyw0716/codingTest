@@ -28,3 +28,5 @@ public class Main {
         System.out.println(number);
     }
 }
+
+//그걸 잊지 말자 나올수 있는 세 수의 최소곱과 최대곱으로 for문을 돌리자!
