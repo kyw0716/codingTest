@@ -1,10 +1,9 @@
 import java.util.*;
 import java.math.BigInteger;
 
-//시간초과!!!!!!!!!!!!!!!
-public class Main {
+public class 암호제작 {
     public static boolean isPrime(int n) {
-        for(int i = 2; i < n; i++) {
+        for(int i = 2; i <= Math.sqrt(n); i++) {
             if(n%i==0) return false;
         }
         return true;
@@ -25,9 +24,8 @@ public class Main {
 
         for(int i = 0; i < prime.size(); i++) {
             BigInteger ii = new BigInteger(String.valueOf(prime.get(i)));
-            BigInteger z = new BigInteger("0");
-            if(p.divide(ii) == z) {
-                if(prime.contains(prime.get(i))) {
+            if(p.remainder(ii) == BigInteger.ZERO) {
+                if(prime.contains(ii.intValue())) {
                     System.out.println("BAD " + prime.get(i));
                     return;
                 }
