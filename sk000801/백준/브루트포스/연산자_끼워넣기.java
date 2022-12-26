@@ -10,7 +10,7 @@ public class 연산자_끼워넣기 {
     
     public static void dfs(int n, int index) {
 
-        if(index == N) {
+        if(index == N) { //인덱스가 깊이 만큼 도달했을 때
             max = Math.max(n, max);
             min = Math.min(n, min);
             return;
@@ -18,14 +18,14 @@ public class 연산자_끼워넣기 {
 
         for(int i = 0; i < yeonsan.length; i++) {
             if(yeonsan[i] > 0) {
-                yeonsan[i]--;
-                switch(i) {
+                yeonsan[i]--; //해당 인덱스를 거치므로 값을 1 줄여줌
+                switch(i) { //재귀호출
                     case 0: dfs(n+num[index], index+1);break;
                     case 1: dfs(n-num[index], index+1);break;
                     case 2: dfs(n*num[index], index+1);break;
                     case 3: dfs(n/num[index], index+1);break;
                     }
-                yeonsan[i]++;
+                yeonsan[i]++; //재귀 호출이 모두 끝났을 때 값을 되돌림
             }
         }
     }
