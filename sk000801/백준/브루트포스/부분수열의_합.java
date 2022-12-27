@@ -11,8 +11,8 @@ public class 부분수열의_합 {
             if(sum == s) count++;
             return;
         }
-        dfs(index+1, sum+num[index]);
-        dfs(index+1, sum);
+        dfs(index+1, sum+num[index]); //이 인덱스를 밟고 지나가는 경우
+        dfs(index+1, sum); //이 인덱스를 그냥 지나치는 경우
     }
 
     public static void main(String[] args) {
