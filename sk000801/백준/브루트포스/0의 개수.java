@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class 0의_개수 {
     public static int count(int a, int b) {
         int count = 0;
         for(int i = a; i <= b; i++) {
