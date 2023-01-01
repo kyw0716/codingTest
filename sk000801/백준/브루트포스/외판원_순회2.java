@@ -5,23 +5,24 @@ public class 외판원_순회2 {
     static int[][] price;
     static boolean[] visited;
     static int min;
+    static int first;
     
-    public static void dfs(int depth, int start, int first) {
-        int hap = 0;
-        if(depth == n) {
-            if(price[start][first] == 0) return;
-            hap += price[start][first];
+    public static void dfs(int depth, int hap, int num) {
+        if(depth == n && first == num) {
             min = Math.min(min, hap);
             return;
-        } else {
+        }
+
+        if(!visited[num]) {
+            visited[num] = true;
+            depth++;
             for(int i = 0; i < n; i++) {
-                if(visited[i] || price[start][i] == 0) continue;
-                visited[i] = true;
-                dfs(depth+1, start+1, first+1);
-                visited[i] = false;
+                if(price[num][i] != 0) dfs(depth,hap+price[num][i],i);
             }
+            visited[num] = false;
         }
     }
+    
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -37,11 +38,15 @@ public class 외판원_순회2 {
         }
 
         for(int i = 0; i < n; i++) {
-            visited[i] = true;
-            dfs(i, i, 1);
+            first = i;
+            dfs(0, 0, i);
         }
-
+        
         System.out.println(min);
-
     }
 }
+
+//num이 인덱스를 도는 n까지의 도달 장소(?)들
+//first는 마지막에 들어오는 곳이 순회되어 처음 num과 같아야 하므로 따로 변수를 지정해줌
+//(그래서 마지막 depth일 때 num과 first가 같은지 비교해줌)
+//main문에서는 시작 지점을 달리 설정하고, dfs 함수에서는 시작 지점에서 이동 지점을 설정해줌
