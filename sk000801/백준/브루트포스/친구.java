@@ -1,3 +1,4 @@
+package sk000801.백준.브루트포스;
 import java.util.*;
 import java.io.*;
 
