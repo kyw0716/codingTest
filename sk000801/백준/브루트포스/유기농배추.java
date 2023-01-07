@@ -1,3 +1,4 @@
+package sk000801.백준.브루트포스;
 import java.io.*;
 import java.util.*;
 
@@ -61,6 +62,5 @@ public class 유기농배추 {
 
             System.out.println(min);
         }
-        
     }
 }
