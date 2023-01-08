@@ -53,7 +53,7 @@ public class 트리의부모찾기 {
         bfs();
 
         for(int i = 2; i <= n; i++) {
-            //System.out.println(answer[i]);
+            System.out.println(answer[i]);
         }
     }
 }
