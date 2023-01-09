@@ -27,7 +27,7 @@ public class 숨바꼭질 {
                     return;
                 }   
 
-                if(visited[next] == 0 && next >= 0 && next < visited.length) {
+                if(next >= 0 && next < visited.length && visited[next] == 0) {
                     visited[next]  = visited[num]+1;
                     q.add(next);
                 }
@@ -40,7 +40,9 @@ public class 숨바꼭질 {
 
         int n = in.nextInt();
         k = in.nextInt();
-        visited = new int[100001];
+        visited = new int[100002];
+
+        if(n==k) {System.out.println(0); return;}
 
         min = 0;
         bfs(n);
