@@ -1,0 +1,4 @@
+SELECT ROUND(avg(DAILY_FEE)) FROM CAR_RENTAL_COMPANY_CAR WHERE CAR_TYPE='SUV'
+
+-- ROUND 반올림 함수 (,2)이면 소수점 둘째자리까지
+-- WHERE 컬럼='특정값'
