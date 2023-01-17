@@ -1,4 +1,4 @@
-package sk000801.백준.그래프탐색;
+package sk000801.백준.그래프;
 import java.io.*;
 import java.util.*;
 
