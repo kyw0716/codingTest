@@ -8,7 +8,7 @@ public class 최단경로 {
     static int e;
     static int k;
     static int U, V, K;
-    static int[] dist;  //거리 배열
+    static int[] dist;         //거리 배열
     static ArrayList[] ad;    //인접배열
     //기준점이 정해져 있으므로 다익스트라 알고리즘(O(nlogn))을 사용하는 것이 좋음
     //처음 생각했던 플로이드 워샬(o(n^2))은 시간 초과 발생할듯함...
@@ -80,6 +80,7 @@ public class 최단경로 {
             U = Integer.parseInt(st.nextToken());
             V = Integer.parseInt(st.nextToken());
             K = Integer.parseInt(st.nextToken());
+            //U에서 V로 가는 가중치가 K인 간선이 존재 
 
             ad[U].add(new Edge(V, K));
         }
