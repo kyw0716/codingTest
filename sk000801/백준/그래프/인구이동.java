@@ -67,18 +67,19 @@ public class 인구이동 {
         int result = 0;
         boolean escape = true;
 
-        while(escape) {
+        while(escape) { //두 지역의 인구 차가 특정 범위 내에 존재한다면 계속해서 인구수를 평균내야함
             escape = false;
             visited = new boolean[n][n];
             for(int i = 0; i < n; i++) {
                 for(int j = 0; j < n; j++) {
                     if(!visited[i][j]) {
-                        int sum = bfs(i, j);
-                        if(list.size()>1) {
-                            sum /= list.size();
+                        int sum = bfs(i, j); //상하좌우를 탐색하며 인구 이동이 가능한 인접한 지역들을 모두 탐색한다, 후에 인구수를 모두 더해준다
+                        if(list.size()>1) { //인구수가 특정 범위 안에 있는 지역이 본인 외에 더 존재한다면
+                            sum /= list.size(); //인구수를 평균으로 설정
                             for(int p = 0; p < list.size(); p++) {
                                 world[list.get(p)[0]][list.get(p)[1]] = sum;
                                 escape = true;
+                                //이렇게 값이 변경되는 상황이 생기지 않는다면 escape 값이 false로 계속 유지되므로 탈출될 것임
                             }
                         }
                     }
