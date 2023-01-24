@@ -1,6 +1,9 @@
 package sk000801.백준.그리디;
 import java.io.*;
 
+//아니 이거 처음에 문제 해석을 잘못해서 이게 무슨 소리야 이랫는데
+//한번 뒤집을 때 3x3 행렬을 다 뒤집는 거라고 해서 아~~ 했다
+
 public class 행렬 {
     static int[][] fir;
     static int[][] res;
@@ -12,6 +15,7 @@ public class 행렬 {
             }
         }
     }
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
