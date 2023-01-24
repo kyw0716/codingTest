@@ -1,0 +1,4 @@
+SELECT COUNT(distinct NAME) AS count FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
+
+--중복제거는 distinct
