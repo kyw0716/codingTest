@@ -1,0 +1,8 @@
+SELECT i.ANIMAL_ID, i.NAME 
+FROM ANIMAL_INS i JOIN ANIMAL_OUTS o
+ON i.ANIMAL_ID = o.ANIMAL_ID
+WHERE i.DATETIME > o.DATETIME
+ORDER BY i.DATETIME ASC
+
+--시간비교는 더 빠른게 더 작은 것!
+--따라서 WHERE 조건에 입양일이 더 이후여야 하므로 i쪽이 더 커야함!
