@@ -17,7 +17,6 @@ public class LCS {
             for(int j = 1; j <= s2.length; j++) {
                 // if(i==0 || j==0) lcs[i][j] = 0;
                 if(s1[i-1].equals(s2[j-1])) lcs[i][j] = lcs[i-1][j-1]+1;
-                //lcs[i][j]가 지금까지의 최대 공통 부분 수열 이래요
                 else lcs[i][j] = Math.max(lcs[i-1][j], lcs[i][j-1]);
             }
         }
