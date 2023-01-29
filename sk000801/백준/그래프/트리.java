@@ -13,6 +13,7 @@ public class 트리 {
 
         for(int j = 0; j < n; j++) {
             if(parent[j] == i) remove(j);
+            //지울 노드가 주어진 노드의 부모라면, 자식도 지워줘야함
         }
     }
 
@@ -20,7 +21,6 @@ public class 트리 {
         int res = 0;
         for(int i = 0; i < n; i++) {
             if(visited[i]) continue;
-
             if(isLeaf(i)) res++;
         }
         return res;
@@ -48,7 +48,8 @@ public class 트리 {
         visited = new boolean[n];
         String[] s = in.nextLine().split(" ");
         for(int i = 0; i < n; i++) {
-            parent[i] = Integer.parseInt(s[i]);
+            parent[i] = Integer.parseInt(s[i]); 
+            //각 노드의 부모가 주어짐
         }
         int erase = Integer.parseInt(in.nextLine());
         remove(erase);
