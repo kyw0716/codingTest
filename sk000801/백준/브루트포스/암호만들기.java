@@ -5,19 +5,9 @@ import java.util.*;
 public class 암호만들기 {
     static int l,c;
     static char[] al;
-    // static char[] ans;
     static StringBuffer sb = new StringBuffer("");
     static boolean[] visited;
-    // public static boolean check(char[] al) {
-    //     int count1 = 0, count2 = 0;
-    //     for(int i = 0; i < al.length; i++) {
-    //         if(al[i] == 'a' || al[i] == 'e' || al[i] == 'i' || al[i] == 'o' || al[i] == 'u') 
-    //             count1++;
-    //         else count2++;
-    //     }
-    //     if(count1 < 1 || count2 < 2)  return false;
-    //     return true;
-    // } 
+
     public static void dfs(int idx, int depth) {
         if(depth==l) {
             int count1 = 0, count2 = 0;
@@ -36,10 +26,6 @@ public class 암호만들기 {
                 }
                 sb.append("\n");
             }  
-            // if(check(ans)) {
-            //     sb.append(ans);
-            //     sb.append("\n");
-            // }
             return;
         }
 
@@ -47,13 +33,6 @@ public class 암호만들기 {
             visited[i] = true;
             dfs(i+1, depth+1);
             visited[i] = false;
-            // if(!visited[i]) {
-            //     // ans[depth] = al[i];
-            //     visited[i] = true;
-            //     dfs(idx+1, depth+1);
-            //     visited[i] = false;
-            // }
-            
         }
     }
     public static void main(String[] args) throws IOException{
@@ -64,7 +43,6 @@ public class 암호만들기 {
         c = Integer.parseInt(st.nextToken());
         al = new char[c];
         visited = new boolean[c];
-        // ans = new char[l];
         
         st = new StringTokenizer(br.readLine());
         for(int i = 0; i < c; i++) {
