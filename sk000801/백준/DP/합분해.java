@@ -3,6 +3,8 @@ import java.util.*;
 
 //점화식 생각,,
 //dp[n][k] = dp[n][k-1]+dp[n-1][k-1]+dp[n-2][k-1]+...+dp[0][k-1]
+//이거 근데 백트래킹으로 풀어도 되지 않나..?
+//https://www.acmicpc.net/problem/2225
 public class 합분해 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
