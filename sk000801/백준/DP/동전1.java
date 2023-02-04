@@ -16,7 +16,7 @@ public class 동전1 {
         }
 
         for(int i = 1; i <= n; i++) {
-            for(int j = 0; j <= k; j++) {
+            for(int j = 1; j <= k; j++) {
                 if(num[i]<=j) dp[j] += dp[j-num[i]];
             }
         }
