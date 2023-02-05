@@ -3,9 +3,6 @@ import java.util.*;
 
 public class 스도쿠 {
     static int[][] sdoku = new int[9][9];
-    static boolean[][] hasNum = new boolean[9][9];
-    static int[] dx = {-1,0,1,0};
-    static int[] dy = {0,-1,0,1};
 
     //체크 여부는 행, 열 줄에, 그리고 9등분된 칸에 겹치는 수가 있는지 확인!
     //없다면 빈 칸에 채워넣을 수 있는 수
