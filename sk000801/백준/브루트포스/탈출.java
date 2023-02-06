@@ -2,6 +2,7 @@ package sk000801.백준.브루트포스;
 import java.io.*;
 import java.util.*;
 
+//https://www.acmicpc.net/problem/3055
 public class 탈출 {
     static int r, c;
     static String[][] road;
