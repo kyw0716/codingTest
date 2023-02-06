@@ -4,6 +4,7 @@ import java.util.*;
 
 //위상정렬 -> 선후관계가 정의된 그래프 구조에서 정렬을 위해 사용하는
 //그대신 비순환 관계여야 함
+//https://www.acmicpc.net/problem/2252
 public class 줄세우기 {
     static int n, m;
     static List<List<Integer>> rank = new ArrayList<>();
