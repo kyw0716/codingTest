@@ -1,0 +1,10 @@
+SELECT A.FLAVOR 
+FROM FIRST_HALF A JOIN JULY B
+WHERE A.FLAVOR = B.FLAVOR
+GROUP BY A.FLAVOR
+ORDER BY A.TOTAL_ORDER+SUM(B.TOTAL_ORDER) DESC
+LIMIT 3
+
+--상위 3개이면 정렬 시킨후 개수를 LIMIT으로 정해둠
+--개수가 많은 순서대로 정렬해야 하므로 ORDER BY로 총 구매 개수 계산
+--A와 B 테이블에서 같은 맛일 때 값을 합쳐야 하므로 WHERE에 FLAVOR사용
