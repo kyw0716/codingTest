@@ -8,7 +8,6 @@ import java.util.*;
 public class 이분그래프 {
     static int v, e;
     static int[] visited;
-    static boolean[] exist;
     static List<List<Integer>> list;
     public static void bfs2() {
         Queue<Integer> q = new LinkedList<>();
@@ -49,7 +48,6 @@ public class 이분그래프 {
             String[] s = br.readLine().split(" ");
             v = Integer.parseInt(s[0]);
             visited = new int[v+1];
-            exist = new boolean[v+1];
             list = new ArrayList<>();
             e = Integer.parseInt(s[1]);
 
