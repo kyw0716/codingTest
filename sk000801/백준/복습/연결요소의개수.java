@@ -1,6 +1,5 @@
 package sk000801.백준.복습;
 import java.io.*;
-import java.util.*;
 
 public class 연결요소의개수 {
     static int n;
