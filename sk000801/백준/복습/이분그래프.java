@@ -4,7 +4,7 @@ import java.util.*;
 
 public class 이분그래프 {
     static int v, e;
-    static List<List<Integer>> list = new ArrayList<>();
+    static List<List<Integer>> list;
     static int[] visited;
     public static void bfs() {
         Queue<Integer> q = new LinkedList<>();
@@ -30,7 +30,7 @@ public class 이분그래프 {
                 }
             }
         }
-        System.out.println("Yes");
+        System.out.println("YES");
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -42,6 +42,7 @@ public class 이분그래프 {
             v = Integer.parseInt(s[0]);
             e = Integer.parseInt(s[1]);
 
+            list = new ArrayList<>();
             for(int r = 0; r <= v; r++) {
                 list.add(new ArrayList<>());
             } 
