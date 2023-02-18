@@ -1,0 +1,3 @@
+SELECT ANIMAL_ID, NAME, if(SEX_UPON_INTAKE IN ('Neutered Male', 'Spayed Female'), 'O', 'X') 중성화
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID ASC
