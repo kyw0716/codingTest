@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.*;
 
 //이분탐색...
+//UpperBound방식! (개수가 중복이 될 때 최댓값을 찾아야 하므로 우리가 원하는 답보다 큰 인덱스 값이 있을 때 그 인덱스-1이 답이 되도록 하는)
 public class 랜선자르기 {
     static int k, n;
     static long[] rans;
