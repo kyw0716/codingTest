@@ -28,8 +28,7 @@ public class 수묶기 {
         while(n <= big.size()-1) {
             if(n+1 < big.size() && big.get(n) != 1 && big.get(n+1) != 1) answer += big.get(n++)*big.get(n++);
             else answer += big.get(n++);
-        }
-        
+        }      
 
         int i = 0;
         while(i <= small.size()-1) {
