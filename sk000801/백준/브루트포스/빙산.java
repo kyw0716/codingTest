@@ -2,6 +2,9 @@ package sk000801.백준.브루트포스;
 import java.io.*;
 import java.util.*;
 
+//원래는 빙산의 원래 값으로 주변 빙하의 녹는 높이를 계산해줘야 해서
+//배열을 두 개 설정하는 방식을 택했으나
+//bfs방식으로 방문 배열을 선언해 계산하기로 함
 public class 빙산 {
     static int n, m;
     static int[][] ice;
