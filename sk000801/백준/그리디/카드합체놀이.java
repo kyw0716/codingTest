@@ -2,8 +2,6 @@ package sk000801.백준.그리디;
 import java.io.*;
 import java.util.*;
 
-import javax.xml.namespace.QName;
-
 public class 카드합체놀이 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
