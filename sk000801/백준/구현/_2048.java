@@ -40,8 +40,11 @@ public class _2048 {
                     for(int j = 0; j < n; j++) {
                         if(game[j][i] != 0) {
                             if(block == game[j][i]) {
+                                //윗부분으로 2배 해준 값을 넣어줌
                                 game[index-1][i] = block*2;
+                                //이후 탐색을 위해 원래 값은 0으로 초기화
                                 block = 0;
+                                //윗부분에 값을 넘겨주고 값이 삭제됨
                                 game[j][i] = 0;
                             } else {
                                 block = game[j][i];
