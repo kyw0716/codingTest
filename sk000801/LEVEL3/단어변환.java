@@ -1,5 +1,4 @@
 package sk000801.LEVEL3;
-import java.util.*;
 
 class Solution {
     int answer;
@@ -11,7 +10,7 @@ class Solution {
             return;
         }
         
-        for(int i = 0;i < words.length; i++) {
+        for(int i = 0; i < words.length; i++) {
             if(visited[i]) continue;
             
             int k = 0;
