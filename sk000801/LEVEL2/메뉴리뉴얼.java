@@ -4,6 +4,7 @@ package sk000801.LEVEL2;
 //주어진 단품 메뉴들을 일단 set으로 받아놓음
 //그리고 개수를 조합해서 최대 개수를 찾아주면 될듯
 //최대개수를 찾아줄 때는 따로따로 메뉴가 존재하는지 확인해야댐 ㅠㅠ
+//거의 푸는데는 28분 but 엉뚱한 방향으로 생각하는데 20분..?
 import java.util.*;
 class Solution {
     public int countNum(String[] orders, String s) {
