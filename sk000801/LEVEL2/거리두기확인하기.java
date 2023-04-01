@@ -61,7 +61,8 @@ class Solution {
 // class Solution {
 //     public boolean check(String[][] p, List<int[]> people) {
 //         for(int i = 0; i < people.size(); i++) {
-//             for(int j = i+1; j < people.size(); j++) {
+//             for(int j = 0; j < people.size(); j++) {
+//                 if(i==j) continue;
 //                 int[] a = people.get(i);
 //                 int[] b = people.get(j);
 //                 if(Math.abs(a[0]-b[0])+Math.abs(a[1]-b[1]) < 2) return false; 
