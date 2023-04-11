@@ -38,11 +38,14 @@ public class 주차요금계산 {
         }
         //42분까지... 이 바보.. 
 
-        //소수점 맞추가
+        //소수점 맞추기
+        //5분?? casting할 때 꼭 (double) 붙여줘야됨 안그러면 적용 안돼
         for(int i = 0; i < ans.length; i++) {
             if(ans[i] <= fees[0]) ans[i] = fees[1];
             else {
-                ans[i] = fees[1]+(int)Math.ceil((ans[i]-fees[0])/fees[2])*fees[3];
+                double money = (double) (ans[i]-fees[0])/fees[2];
+                if((int)money-money == 0) ans[i] = fees[1]+(int)money*fees[3];
+                else ans[i] = fees[1]+((int)money+1)*fees[3];
             }   
         }
 
@@ -54,7 +57,11 @@ public class 주차요금계산 {
         
         int[] fees = {120, 0, 60, 591};
         String[] records = {"16:00 3961 IN","16:00 0202 IN","18:00 3961 OUT","18:00 0202 OUT","23:58 3961 IN"};
+
+        // int[] fees2 = {1,461,1,10};
+        // String[] records2 = {"00:00 1234 IN"};
         int[] ans = solution(fees, records);
+
         for(int i = 0; i < ans.length; i++) {
             System.out.println(ans[i]);
         }
