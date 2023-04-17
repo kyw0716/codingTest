@@ -9,6 +9,8 @@ class Solution {
     // 45분+풀이 참조,,,
     public int solution(String s) {
         int ans = s.length();
+        //압축을 시키기 위해 앞길이와 뒷길이가 적어도 같아야 하므로
+        //길이의 반까지만 반복함
         for (int i = 1; i <= s.length() / 2; i++) {
             int len = 0;
 
