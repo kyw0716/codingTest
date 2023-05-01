@@ -29,7 +29,11 @@ public class 순열 {
         }
         return true;
     }
-    // public static void swap()
+    public static void swap(String[] cur, int n, int r) {
+        String temp = cur[n];
+        cur[n] = cur[r];
+        cur[r] = temp;
+    }
     public static void perm(List<String> all, boolean[] visited, String[][] team, int depth, int n, int r, String[] cur) {
         if(depth == n*r) {
             int idx = 0;
@@ -44,12 +48,15 @@ public class 순열 {
         }
 
         for(int i = 0; i < all.size(); i++) {
-            if(!visited[i]) {
-                visited[i] = true;
-                cur[depth] = all.get(i);
-                perm(all, visited, team, depth+1, n, r, cur);
-                visited[i] = false;
-            }
+            swap(cur, i, depth);
+            perm(all, visited, team, depth+1, n, r, cur);
+            swap(cur, i, depth);
+            // if(!visited[i]) {
+            //     visited[i] = true;
+            //     cur[depth] = all.get(i);
+            //     perm(all, visited, team, depth+1, n, r, cur);
+            //     visited[i] = false;
+            // }
         }
     }
     public static int solution(int n, int r, String[][] team) {
