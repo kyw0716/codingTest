@@ -76,43 +76,43 @@ public class 리코쳇로봇 {
 
 //1번 망한 풀이
 // class Solution {
-//         int[] dx = {-1,0,1,0};
-//         int[] dy = {0,-1,0,1};
-//         int[] dest = new int[2];
-//         int[] first = new int[2];
-//         String[][] game;
-//         public int bfs(int a, int b) {
-//             Queue<int[]> q = new LinkedList<>();
-//             q.add(new int[]{a,b});
-//             int[][] visited = new int[game.length][game[0].length];
-            
-//             for(int i = 0; i < visited.length; i++) {
-//                 Arrays.fill(visited[i], -1);
-//             }
-//             visited[a][b] = 0;
-            
-//             while(!q.isEmpty()) {
-//                 int[] top = q.poll();
+//     int[] dx = {-1,0,1,0};
+//     int[] dy = {0,-1,0,1};
+//     int[] dest = new int[2];
+//     int[] first = new int[2];
+//     String[][] game;
+//     public int bfs(int a, int b) {
+//         Queue<int[]> q = new LinkedList<>();
+//         q.add(new int[]{a,b});
+//         int[][] visited = new int[game.length][game[0].length];
+          
+//         for(int i = 0; i < visited.length; i++) {
+//            Arrays.fill(visited[i], -1);
+//         }
+//         visited[a][b] = 0;
+           
+//         while(!q.isEmpty()) {
+//            int[] top = q.poll();
+               
+//            if(top[0] == dest[0] && top[1] == dest[1]) return visited[top[0]][top[1]];
                 
-//                 if(top[0] == dest[0] && top[1] == dest[1]) return visited[top[0]][top[1]];
-                
-//                 for(int i = 0; i < 4; i++) {
-//                     int nx = top[0];
-//                     int ny = top[1];
+//            for(int i = 0; i < 4; i++) {
+//                int nx = top[0];
+//                int ny = top[1];
                     
-//                     while(true) {
-//                         if(nx<0||nx>=visited.length||ny<0||ny>=visited[0].length||visited[nx][ny] != -1||game[nx][ny].equals("D")) {
-//                             q.add(new int[]{nx-dx[i], ny-dy[i]});
-//                             break;
-//                         } 
-//                         else if(game[nx][ny].equals(".")) {
-//                             nx += dx[i];
-//                             ny += dy[i];
-//                             visited[nx][ny] = visited[top[0]][top[1]]+1;
-//                         } 
+//                while(true) {
+//                     if(nx<0||nx>=visited.length||ny<0||ny>=visited[0].length||visited[nx][ny] != -1||game[nx][ny].equals("D")) {
+//                          q.add(new int[]{nx-dx[i], ny-dy[i]});
+//                          break;
 //                     } 
-//                 }
-//             }
+//                     else if(game[nx][ny].equals(".")) {
+//                          nx += dx[i];
+//                          ny += dy[i];
+//                          visited[nx][ny] = visited[top[0]][top[1]]+1;
+//                     } 
+//                } 
+//            }
+//         }
             
 //             return -1;
 //         }
