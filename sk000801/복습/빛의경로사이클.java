@@ -15,9 +15,9 @@ public class 빛의경로사이클 {
             road[i][j][r] = 1;
 
             if(grid[i].charAt(j) == 'L') {
-                r = (r+1)%4;
-            } else if(grid[i].charAt(j) == 'R') {
                 r = (r+3)%4;
+            } else if(grid[i].charAt(j) == 'R') {
+                r = (r+1)%4;
             }
 
             i = (i+dx[r]+grid.length)%grid.length;
