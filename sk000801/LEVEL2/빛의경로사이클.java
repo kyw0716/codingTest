@@ -6,7 +6,7 @@ class 빛의경로사이클 {
     //어떻게 풀어야 할까
     //44분 56초
     //어차피 상하좌우 이동해야 하니까 
-    //위, 왼쪽, 오른쪽, 아래쪽
+    //왼쪽, 아래쪽, 오른쪽, 위쪽
     int[] dx = {-1,0,1,0};
     int[] dy = {0,-1,0,1};
     public int check(String[] grid, int[][][] light, int x, int y, int z) {
