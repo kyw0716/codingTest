@@ -1,6 +1,7 @@
 package sk000801.LEVEL3;
 import java.util.*;
 
+//57분,, 풀던대로 풀면 되는데 아닌 거 같다구 혼자 쌩쇼해서 시간 더 걸린듯함
 public class 셔틀버스 {
     public String solution(int n, int t, int m, String[] timetable) {
         String answer = "";
@@ -19,11 +20,11 @@ public class 셔틀버스 {
             count = 0;
             if(idx >= list.size()) break;
             while(count < m) {
+                if(idx >= list.size()) break;
                 if(start >= list.get(idx)) {
                     fin = list.get(idx);
                     count++;
                     idx++;
-                    if(idx >= list.size()) break;
                 } else break;
             }
             start += t;
