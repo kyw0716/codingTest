@@ -2,8 +2,8 @@ package sk000801.LEVEL3;
 import java.util.*;
 
 //32분 but 힌트 참조
-class Solution {
-    public int solution(int n, int[] money) {
+public class 거스름돈 {
+    public static int solution(int n, int[] money) {
         Arrays.sort(money);
         long[] dp = new long[n+1];
         
@@ -17,8 +17,16 @@ class Solution {
             }
         }
         
-       //System.out.println(dp[0]+" "+dp[1]+" "+dp[2]+" "+dp[3]+" "+dp[4]+" "+dp[5]);
+       for(int i = 0; i <= n; i++) {
+        System.out.print(dp[i]+" ");
+       }
 
         return (int)dp[n]%1_000_000_007;
     }
+
+    public static void main(String[] args) {
+        int[] money = {1,2,5};
+        System.out.println(solution(8, money));
+    }
 }
+
