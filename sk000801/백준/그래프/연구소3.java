@@ -4,6 +4,7 @@ import java.util.*;
 //0 빈칸, 1 벽, 2 비활성 바이러스
 //https://www.acmicpc.net/problem/17142
 //65분 + 시간 초과ㅠㅠ
+//로직의 문제가 아니라 조합 돌릴때 시작 값 잘못 설정함,, 바보
 public class 연구소3 {
     static int n;
     static int m;
@@ -23,7 +24,7 @@ public class 연구소3 {
         }
     }
 
-    public static void bfs(int[] idx, int emptySpace) {
+    public static void bfs(int[] idx, int empty) {
         Queue<Virus> q = new LinkedList<>();
         boolean[][] isVirus = new boolean[n][n];
 
@@ -43,8 +44,8 @@ public class 연구소3 {
                     if(nx<0||ny<0||nx>=n||ny>=n) continue;
                     if(isVirus[nx][ny] || room[nx][ny] == 1) continue;
 
-                    if(room[nx][ny] == 0) emptySpace--;
-                    if(emptySpace == 0) {
+                    if(room[nx][ny] == 0) empty--;
+                    if(empty == 0) {
                         min = Math.min(min, cur.count+1);
                     }
 
@@ -56,8 +57,7 @@ public class 연구소3 {
 
     public static void perm(int[] idx, boolean[] visited, int start, int depth) {
         if(depth == m) {
-            int empty = emptySpace;
-            bfs(idx, empty);
+            bfs(idx, emptySpace);
             return;
         }
 
@@ -65,7 +65,7 @@ public class 연구소3 {
             if(!visited[i]) {
                 visited[i] = true;
                 idx[depth] = i;
-                perm(idx, visited, start+1, depth+1);
+                perm(idx, visited, i+1, depth+1);
                 visited[i] = false;
             }
         }
